@@ -1,10 +1,11 @@
+//å†’æ³¡æ’åº
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 void bubble_sort(int arr[], int sz) 
 {
 	int i = 0;
 	int flag = 1;
-	for (i = 0; i < sz - 1; i++) //n¸öÔªËØ£¬ĞèÅÅn-1ÌË
+	for (i = 0; i < sz - 1; i++) //nä¸ªå…ƒç´ ï¼Œéœ€æ’n-1è¶Ÿ
 	{
 		int x = 0;
 		for (x = 0; x < sz - 1 - i; x++) 
@@ -26,7 +27,7 @@ void bubble_sort(int arr[], int sz)
 }
 int main() 
 {
-	int arr[] = { 9,8,7,6,5,4,3,2,1,0 };//10¸öÔªËØ ÅÅ9ÌË
+	int arr[] = { 9,8,7,6,5,4,3,2,1,0 };//10ä¸ªå…ƒç´  æ’9è¶Ÿ
 	int sz = sizeof(arr) / sizeof(arr[0]);
 	bubble_sort(arr,sz);
 	int i = 0;
